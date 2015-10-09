@@ -131,6 +131,7 @@ static const char* conf[][2] = {
 // See https://source.android.com/devices/tech/config/filesystem#using-file-system-capabilities
 static const struct fs_path_config android_files[] = {
     // clang-format off
+    { 00755, AID_ROOT,      AID_ROOT,      0, "system/addon.d/*" },
     { 00644, AID_SYSTEM,    AID_SYSTEM,    0, "data/app/*" },
     { 00644, AID_SYSTEM,    AID_SYSTEM,    0, "data/app-ephemeral/*" },
     { 00644, AID_SYSTEM,    AID_SYSTEM,    0, "data/app-private/*" },
